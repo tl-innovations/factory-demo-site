@@ -10,7 +10,7 @@
     "install": "npm ci",
     "dev": "npm run dev",
     "lint": "npm run lint",
-    "typecheck": "npx tsc --noEmit",
+    "typecheck": "npx next typegen && npx tsc --noEmit",
     "test": "",
     "build": "npm run build",
     "e2e": ""
