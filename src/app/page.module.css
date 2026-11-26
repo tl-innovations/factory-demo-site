@@ -84,6 +84,12 @@
   font-weight: 500;
 }
 
+.intro a:focus-visible,
+.ctas a:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: 3px;
+}
+
 a.primary {
   background: var(--text-primary);
   color: var(--background);
