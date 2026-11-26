@@ -40,7 +40,14 @@
       "Bash(node *scripts/verify.mjs*)",
       "Bash(npx playwright test *)",
       "Bash(npx playwright show-report *)",
-      "Bash(npx lighthouse *)"
+      "Bash(npx lighthouse *)",
+      "Bash(npm ci)",
+      "Bash(npm ci *)",
+      "Bash(pnpm install --frozen-lockfile*)",
+      "Bash(yarn install --frozen-lockfile*)",
+      "Bash(bun install --frozen-lockfile*)",
+      "Bash(npx next typegen)",
+      "Bash(npx next typegen *)"
     ],
     "deny": [
       "Read(./.env)",
