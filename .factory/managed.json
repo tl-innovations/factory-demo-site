@@ -1,0 +1,14 @@
+{
+  "$comment": "Written by the software factory. These files are overwritten by `factory sync`. Change them in the factory repo.",
+  "factoryRepo": "tl-innovations/software-factory",
+  "factoryRef": "main",
+  "files": [
+    ".factory/standards.md",
+    ".github/ISSUE_TEMPLATE/bug.yml",
+    ".github/ISSUE_TEMPLATE/feature.yml",
+    ".github/pull_request_template.md",
+    ".github/workflows/factory-ci.yml",
+    ".github/workflows/factory-claude-review.yml",
+    ".github/workflows/factory-claude.yml"
+  ]
+}

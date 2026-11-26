@@ -1,0 +1,39 @@
+{
+  "name": "factory-demo-site",
+  "type": "web",
+  "description": "Factory demo: marketing site",
+  "framework": "next",
+  "packageManager": "npm",
+  "nodeVersion": "lts/*",
+  "autonomy": "supervised",
+  "commands": {
+    "install": "npm ci",
+    "dev": "npm run dev",
+    "lint": "npm run lint",
+    "typecheck": "npx tsc --noEmit",
+    "test": "",
+    "build": "npm run build",
+    "e2e": ""
+  },
+  "ci": [
+    "lint",
+    "typecheck",
+    "build"
+  ],
+  "gates": {
+    "onStop": [
+      "lint",
+      "typecheck"
+    ]
+  },
+  "deploy": {
+    "provider": "vercel",
+    "productionBranch": "main"
+  },
+  "guard": {
+    "protectedBranches": [
+      "main",
+      "master"
+    ]
+  }
+}
